@@ -1,0 +1,24 @@
+<script type="text/javascript">
+// ## Task 3: Rotate the Array by k
+function rotateArray(arr, k) {
+  const rotatedArr = [];
+  const n = arr.length;
+
+  for (let i = 0; i < n; i++) {
+    const newIndex = (i + k) % n;
+    rotatedArr[newIndex] = arr[i];
+  }
+
+  return rotatedArr;
+}
+
+const arr = [1, 2, 4, 5, 6, 7];
+const k = 1;
+const rotatedArr = rotateArray(arr, k);
+
+console.log(rotatedArr);  // Output: [7, 1, 2, 4, 5, 6]
+
+
+
+
+</script>

@@ -1,0 +1,30 @@
+<script type="text/javascript">
+
+
+//Reverce String (Two Pointer Approach)
+//const s = "Hello, World!";
+//Output :- "!dlroW ,olleH"
+
+function stringReverce(s) {
+    const string = s.split('');
+    let start = 0;
+    let end = string.length - 1;
+
+    while (start < end) {
+        const temp = string[start];
+        string[start] = string[end];
+        string[end] = temp;
+        start++;
+        end--;
+    }
+    return string.join('');
+}
+
+const s = "Hello, World!";
+const reverce = stringReverce(s);
+
+console.log(reverce); // Output: "!dlroW ,olleH"
+
+
+
+</script>

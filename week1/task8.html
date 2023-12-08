@@ -1,0 +1,33 @@
+<script type="text/javascript">
+//## Task 8: Rotate By 90
+const originalMatrix = [
+  [1, 2, 3, 4],
+  [5, 6, 7, 8],
+  [1, 2, 3, 4],
+  [5, 6, 7, 8]
+];
+
+const numRows = originalMatrix.length;
+const numCols = originalMatrix[0].length;
+
+const rotatedMatrix = [];
+
+
+for (let i = 0; i < numCols; i++) {
+  rotatedMatrix.push([]);
+}
+
+
+for (let i = 0; i < numRows; i++) {
+  for (let j = 0; j < numCols; j++) {
+    rotatedMatrix[j].unshift(originalMatrix[i][j]);
+  }
+}
+
+
+for (let i = 0; i < numCols; i++) {
+  console.log(rotatedMatrix[i].join(' '));
+}
+
+
+</script>

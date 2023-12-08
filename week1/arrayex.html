@@ -1,0 +1,65 @@
+<script type="text/javascript">
+
+    // let arr = [2,3,4,5,6,7,8,9];
+    // let target = 13;
+
+    // for(let i=0;i<arr.length;i++){
+    //     for(j=i+1;j<arr.length;j++){
+    //         if(arr[i] + arr[j] == target){
+    //             console.log(`index of first number ${i} and secound number ${j} value ${arr[i]} ${arr[j]}`);
+    //         }
+    //     }
+    // }
+
+    // let arr  = [9,4,2,6,7,1,15];
+    // let target = 10;
+    // let tmp;
+    // for(i=0;i<arr.length;i++){
+    //     for(j=i+1;j<arr.length;j++){
+    //         if(arr[i] > arr[j]){
+    //             temp = arr[i];
+    //             arr[i] = arr[j];
+    //             arr[j] = temp;
+    //         }   
+    //     }
+    // }
+
+
+    // let start = 0;
+    // let end = arr.length - 1;
+    // while(start < end){
+    //     let sum = arr[start] + arr[end]; 
+    //     if(sum === target){
+    //         console.log(target,arr[start], arr[end]);
+    //         break;
+    //     }else if(sum!=target){
+    //         start++;
+    //     }else{  
+    //         end--;
+    //     }
+    // }
+
+    let arr = [2, 3, 4, 1, 2];
+    let max=0;
+    for (let i = 0; i < arr.length; i++) {
+        let sub = [];
+
+        for (let j = i; j < arr.length; j++) {
+            sub.push(arr[j]);
+            let sum = 0;
+            for (let k = 0; k < sub.length; k++) {
+                sum += sub[k];
+            }
+            // console.log(sum);
+            if (sum > max) {
+                max = sum;
+            }
+        }
+    }
+
+    console.log(max);
+
+
+
+
+</script>

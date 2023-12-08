@@ -1,0 +1,28 @@
+<script type="text/javascript">
+
+    //print all subarrays of an array without using a parent array
+    //const arr = [1, 2, 3];
+    //[1]
+    //[1, 2]    
+    //[1, 2, 3]
+    //[2]
+    //[2, 3]
+    //[3]
+
+    function Subarrays(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i; j < arr.length; j++) {
+                let subarray = [];
+                for (let k = i; k <= j; k++) {
+                    subarray.push(arr[k]);
+                }
+                console.log(subarray);
+            }
+        }
+    }
+
+    const arr = [1, 2, 3];
+    Subarrays(arr);
+
+
+</script>

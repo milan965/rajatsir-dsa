@@ -1,0 +1,22 @@
+<script type="text/javascript">
+
+// ## Task 5: Traverse a 2D Array - Print column-wise reverse
+
+const twoDArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+];
+
+const numRows = twoDArray.length;
+const numCols = twoDArray[0].length;
+
+for (let j = numCols - 1; j >= 0; j--) {
+  for (let i = 0; i < numRows; i++) {
+    console.log(twoDArray[i][j]);
+  }
+}
+
+
+
+</script>

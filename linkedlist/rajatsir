@@ -1,0 +1,33 @@
+class Node {
+    constructor(value){
+        this.data = value
+        this.next = null
+    }
+}
+
+class LinkList{
+    constructor(){
+        this.head = null
+    }
+
+    add(value){
+        if(!this.head){
+            this.head= new Node(value)
+            return
+        }
+        let current = this.head
+        while (current.next) {
+            current = current.next
+        }
+        current.next = new Node(value)
+    }
+}
+
+
+const linklist = new LinkList()
+
+linklist.add(1)
+linklist.add(2)
+linklist.add(3)
+
+console.log(linklist)

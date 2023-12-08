@@ -1,0 +1,27 @@
+<script type="text/javascript">
+
+    //Genrate and Print All Substring of a String
+    //const str = "abc";
+
+    //output :- 
+    // a
+    // ab
+    // abc
+    // b
+    // bc
+    // c
+
+    function Substring(str) {
+        for (let i = 0; i < str.length; i++) {
+            for (let j = i + 1; j <= str.length; j++) {
+                console.log(str.slice(i, j));
+            }
+        }
+    }
+
+    const str = "abcd";
+    Substring(str);
+
+
+
+</script>

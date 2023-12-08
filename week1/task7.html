@@ -1,0 +1,38 @@
+<script type="text/javascript">
+
+    //## Task 7: Transpose the Matrix
+
+    // Original matrix
+const originalMatrix = [
+  [0, 0, 0, 0, 0],
+  [1, 1, 1, 1, 1],
+  [2, 2, 2, 2, 2],
+  [3, 3, 3, 3, 3]
+];
+
+
+const transposedMatrix = [];
+
+
+const numRows = originalMatrix.length;
+const numCols = originalMatrix[0].length;
+
+
+for (let i = 0; i < numCols; i++) {
+  transposedMatrix.push([]);
+}
+
+
+for (let i = 0; i < numRows; i++) {
+  for (let j = 0; j < numCols; j++) {
+    transposedMatrix[j][i] = originalMatrix[i][j];
+  }
+}
+
+
+for (let i = 0; i < numCols; i++) {
+  console.log(transposedMatrix[i].join(' '));
+}
+
+
+</script>

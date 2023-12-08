@@ -1,0 +1,42 @@
+<!--
+    arr = [3, 4, 5, 2, 3, 4, 5, 6]
+-->
+
+<script type="text/javascript">
+
+    const arr = [3, 4, 5, 2, 3, 4, 5, 6];
+    const duplicate = [];
+    
+    for (let i = 0; i < arr.length; i++) {
+      let check = false;
+      for (let j = 0; j < duplicate.length; j++) {
+        if (arr[i] === duplicate[j]) {
+          check = true;
+          break;
+        }
+      }
+      if (!check) {
+        duplicate.push(arr[i]);
+      }
+    }
+    
+    let a  = duplicate;
+   
+    for(let i=0;i<a.length;i++){
+        
+        for(let j=i+1;j<a.length;j++){
+            
+            if(a[i] > a[j]){
+                temp = a[i];
+                a[i] = a[j];
+                a[j] = temp;
+            }
+        }
+    }
+
+    console.log(a);
+
+    
+   
+    
+    </script>

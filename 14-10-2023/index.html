@@ -1,0 +1,94 @@
+<!-- sliding window
+//binary serch
+//linked list -->
+
+<script type="text/javascript">
+
+    //maximum sum
+    // let arr = [-6, -2, 5, 2, 1, -4, 2];
+    // let k = 3;
+    // let max_sum = 0;
+    // let curr_sum = 0;
+
+
+    // for (let i = 0; i < k; i++) {
+    //     curr_sum += arr[i];
+    // }
+
+    // max_sum = curr_sum;
+
+
+    // for (let i = k; i < arr.length; i++) {
+    //     curr_sum += arr[i] - arr[i - k];
+    //     console.log(arr[i]);
+    //     if (curr_sum > max_sum) {
+    //         max_sum = curr_sum;
+    //     }
+    // }
+
+    // console.log(max_sum); // Maximum sum of a subarray of length k
+
+
+    //minimum sum find
+    // let arr = [-6,-2,5,2,1,-4,2];
+    // let k=3;
+    // let min_sum = 0;
+    // let curr_sum = 0;
+    // for(let i=0;i<k;i++){
+    //     curr_sum += arr[i];
+    // }
+    // if(min_sum > curr_sum){
+    //     min_sum = curr_sum;
+    // }
+    // for(let i = k ;i < arr.length; i++){
+    //     curr_sum -= arr[i-k];
+    //     curr_sum += arr[i];
+    // }
+    // if(curr_sum < min_sum){
+    //     min_sum = curr_sum;
+    // }
+    // console.log(min_sum);
+
+
+    //binary search
+    //note :- array farjiyat sorted hona chaiye
+    // let arr = [1, 2, 3, 5, 7, 9, 10];
+    // let target = 99;
+    // let start = 0;
+    // let end = arr.length - 1;
+    // let find = false;
+    // while (start <= end) {
+    //     let mid = Math.floor((start + end) / 2);
+    //     if (arr[mid] == target) {
+    //         find = true;
+    //         break;
+    //     } else if (arr[mid] > target) {
+    //         end = mid - 1;
+    //     } else {
+    //         start = mid + 1;
+    //     }
+    // }
+    // find ? console.log("yes") : console.log("-1")
+
+    //linked list
+
+    class node{
+        constructor(data){
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+    class LinkedList{
+        constructor(){
+            this.head = null
+        }
+        add(data){
+            let newNode = new node(data)
+        }
+    }
+
+    let list = new LinkedList();
+    console.log(list);
+
+</script>
